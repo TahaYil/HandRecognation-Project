@@ -1,0 +1,41 @@
+.custom-menu {
+    position: absolute;
+    top: 56px;
+    right: 16px;
+    width: 220px;
+    background-color: #212529;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.custom-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffc107 !important;
+    font-weight: bold;
+    border-left: 3px solid #ffc107;
+    border-radius: 4px;
+}
+
+.active-link {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107 !important;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 3px solid #ffc107;
+    border-radius: 4px;
+}
+.nav-link {
+    transition: all 0.3s ease;
+}
